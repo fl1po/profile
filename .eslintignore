@@ -1,0 +1,10 @@
+/.jest
+/.next
+/.vscode
+/old
+__mocks__
+/src/services/api/*.js
+/src/services/repositories/**/*.js
+/static
+/*.stories.js
+*.bundle*.js
