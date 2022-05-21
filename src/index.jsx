@@ -4,7 +4,7 @@ import Main from './pages/main';
 import { createGlobalStyle } from 'styled-components';
 
 const Global = createGlobalStyle`
-  body {
+  body, #root {
     background-color: grey;
     display: flex;
     align-items: center;

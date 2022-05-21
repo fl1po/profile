@@ -5,7 +5,9 @@ import Telegram from '../../../resources/telegram.png';
 
 const StyledApp = styled.div`
   height: 30vh;
-  width: 20vw;
+  min-width: 200px;
+  max-width: 250px;
+  width: 100%;
   background-color: darkgrey;
   display: flex;
   justify-content: center;
