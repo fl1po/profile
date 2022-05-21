@@ -4,11 +4,13 @@ import Github from '../../../resources/github.png';
 import Telegram from '../../../resources/telegram.png';
 
 const StyledApp = styled.div`
-  height: 100vh;
-  width: 90vw;
+  height: 30vh;
+  width: 20vw;
   background-color: darkgrey;
   display: flex;
   justify-content: center;
+  border-radius: 10%;
+  box-shadow: 0px 0px 20px 5px #504646;
 `;
 
 const HiddenDocs = styled.div`
