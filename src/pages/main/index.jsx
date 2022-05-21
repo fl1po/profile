@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Github from '../../../resources/github.png';
+import Telegram from '../../../resources/telegram.png';
 
 const StyledApp = styled.div`
   height: 100vh;
@@ -15,13 +17,23 @@ const HiddenDocs = styled.div`
 
 const StyledLink = styled.a`
   color: black;
+  margin-left: 5px;
 `;
 
 const LinkList = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+`;
+
+const StyledLinkItem = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 8px;
+`;
+
+const StyledLogo = styled.img`
+  margin-right: 5px;
 `;
 
 const Docs = () => (
@@ -36,37 +48,45 @@ const Docs = () => (
   </HiddenDocs>
 );
 
-const LinkItem = ({ name, link, userName }) => (
-  <div>
+const LinkItem = ({ name, link, userName, src }) => (
+  <StyledLinkItem>
+    <StyledLogo
+      src={src}
+      alt={name + ' logo'}
+      width={20}
+      height={20}
+    />
     {name}: 
     {' '}
     <StyledLink
-      href={link}
+      href={link+userName}
       target="_blank"
     >
       @{userName}
     </StyledLink>
-  </div>
+  </StyledLinkItem>
 )
 
 const Main = () => {
   const links = [
     {
-      name: 'Github',
+      name: 'GitHub',
       link: 'https://github.com/',
-      userName: 'fl1po'
+      userName: 'fl1po',
+      src: Github,
     },
     {
       name: 'Telegram',
       link: 'https://t.me/',
-      userName: 'mitryakov'
+      userName: 'mitryakov',
+      src: Telegram,
     },
   ]
 
   return (
     <StyledApp>
       <LinkList>
-        {links.map(({ name, link, userName }) => <LinkItem name={name} link={link+userName} userName={userName}/>)}
+        {links.map(({ ...props }) => <LinkItem {...props} />)}
       </LinkList>
       <Docs />
     </StyledApp>
