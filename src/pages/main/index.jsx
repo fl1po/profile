@@ -5,6 +5,7 @@ import Telegram from '../../../resources/telegram.png';
 import VK from '../../../resources/vk.png';
 import Instagram from '../../../resources/instagram.png';
 import cyrm from '../../../resources/cyrm.svg';
+import Protonmail from '../../../resources/protonmail.png';
 
 const StyledApp = styled.div`
   min-height: 35vh;
@@ -29,7 +30,7 @@ const StyledLink = styled.a`
   margin-left: 5px;
 `;
 
-const LinkList = styled.div`
+const SocialsList = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,10 +84,10 @@ const LinkItem = ({ name, link, userName, src }) => (
     />
     {name}:
     <StyledLink
-      href={link+userName}
+      href={userName ? link+userName : `mailto:${link}`}
       target="_blank"
     >
-      @{userName}
+      {userName ? `@${userName}` : link}
     </StyledLink>
   </StyledLinkItem>
 )
@@ -112,21 +113,6 @@ const Company = ({ post, companyName, description, resources }) => (
 )
 
 const Main = () => {
-  const links = [
-    {
-      name: 'GitHub',
-      link: 'https://github.com/',
-      userName: 'fl1po',
-      src: Github,
-    },
-    {
-      name: 'Telegram',
-      link: 'https://t.me/',
-      userName: 'mitryakov',
-      src: Telegram,
-    },
-  ];
-
   const companies = [
     {
       post: 'Frontend Developer',
@@ -166,7 +152,27 @@ const Main = () => {
         },
       ]
     },
-  ]
+  ];
+
+  const links = [
+    {
+      name: 'GitHub',
+      link: 'https://github.com/',
+      userName: 'fl1po',
+      src: Github,
+    },
+    {
+      name: 'Telegram',
+      link: 'https://t.me/',
+      userName: 'mitryakov',
+      src: Telegram,
+    },
+    {
+      name: 'Mail',
+      link: 'fl1po@pm.me',
+      src: Protonmail,
+    },
+  ];
 
   return (
     <StyledApp>
@@ -174,9 +180,9 @@ const Main = () => {
         {companies.map((company) => <Company {...company} />)}
       </CompanyList>
       
-      <LinkList>
+      <SocialsList>
         {links.map((link) => <LinkItem {...link} />)}
-      </LinkList>
+      </SocialsList>
     </StyledApp>
   );
 };
