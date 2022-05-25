@@ -20,7 +20,7 @@ export const companies = [
         link: 'https://vk.com/',
         name: 'cyber_rom',
       },
-    ]
+    ],
   },
   {
     post: 'PR',
@@ -42,7 +42,7 @@ export const companies = [
         link: 'https://instagram.com/',
         name: 'warholproject',
       },
-    ]
+    ],
   },
 ];
 

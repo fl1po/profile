@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledLinkItem = styled.div`
@@ -15,17 +16,20 @@ const StyledLink = styled.a`
   margin-left: 5px;
 `;
 
-const LinkItem = ({ name, link, userName, src }) => (
+const LinkItem = ({
+  name, link, userName, src,
+}) => (
   <StyledLinkItem>
     <StyledLogo
       src={src}
-      alt={name + ' logo'}
+      alt={`${name } logo`}
       width={20}
       height={20}
     />
-    {name}:
+    {name}
+    :
     <StyledLink
-      href={userName ? link+userName : `mailto:${link}`}
+      href={userName ? link + userName : `mailto:${link}`}
       target="_blank"
     >
       {userName ? `@${userName}` : link}

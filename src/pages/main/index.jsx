@@ -28,18 +28,16 @@ const CompanyList = styled.div`
 
 `;
 
-const Main = () => {
-  return (
-    <StyledApp>
-      <CompanyList>
-        {companies.map((company) => <Company {...company} />)}
-      </CompanyList>
-      
-      <SocialsList>
-        {socials.map((link) => <LinkItem {...link} />)}
-      </SocialsList>
-    </StyledApp>
-  );
-};
+const Main = () => (
+  <StyledApp>
+    <CompanyList>
+      {companies.map((company) => <Company key={company.companyName} {...company} />)}
+    </CompanyList>
+
+    <SocialsList>
+      {socials.map((link) => <LinkItem key={link.name} {...link} />)}
+    </SocialsList>
+  </StyledApp>
+);
 
 export default Main;

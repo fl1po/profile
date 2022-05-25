@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 const StyledCompany = styled.div`
@@ -16,17 +17,24 @@ const SocialList = styled.div`
   justify-content: center;
 `;
 
-const Company = ({ post, companyName, description, resources }) => (
+const Company = ({
+  post, companyName, description, resources,
+}) => (
   <StyledCompany>
     {post}
     <div>@</div>
-    {companyName} ({description})
+    {companyName}
+    {' '}
+    (
+    {description}
+    )
     <SocialList>
       {resources.map(({ src, link, name = '' }) => (
-        <div>
+        <div key={link}>
           <a
-            href={link+name}
+            href={link + name}
             target="_blank"
+            rel="noreferrer"
           >
             <StyledLogo src={src} width={20} height={20} />
           </a>
