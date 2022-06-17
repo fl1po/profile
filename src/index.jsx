@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './pages/main';
 import { createGlobalStyle } from 'styled-components';
+import Main from './pages/main';
 
 const Global = createGlobalStyle`
   body, #root {
@@ -12,6 +12,7 @@ const Global = createGlobalStyle`
     margin: 0;
     height: 100vh;
     width: 100vw;
+    font-family: 'Roboto';
   }
 `;
 
