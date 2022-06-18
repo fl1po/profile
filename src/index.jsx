@@ -5,14 +5,14 @@ import Main from './pages/main';
 
 const Global = createGlobalStyle`
   body, #root {
-    background-color: grey;
+    background-color: #555572;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     height: 100vh;
     width: 100vw;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
   }
 `;
 

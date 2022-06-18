@@ -9,7 +9,7 @@ const StyledApp = styled.div`
   min-width: 200px;
   max-width: 250px;
   width: 100%;
-  background-color: darkgrey;
+  background-color: #d8d3ff;
   display: flex;
   justify-content: center;
   flex-direction: column;
