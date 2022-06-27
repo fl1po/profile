@@ -9,7 +9,7 @@ const StyledCompany = styled.div`
 `;
 
 const StyledLogo = styled.img`
-  margin-right: 5px;
+  margin: 5px 10px;
 `;
 
 const SocialList = styled.div`
