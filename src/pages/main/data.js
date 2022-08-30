@@ -1,9 +1,9 @@
 import Github from '../../../resources/github.png';
-import Telegram from '../../../resources/telegram.png';
-import VK from '../../../resources/vk.png';
-import Instagram from '../../../resources/instagram.png';
+import Telegram from '../../../resources/telegram.svg';
+import VK from '../../../resources/vk.svg';
+import Instagram from '../../../resources/instagram.svg';
 import cyrm from '../../../resources/cyrm.svg';
-import Protonmail from '../../../resources/protonmail.png';
+import Protonmail from '../../../resources/protonmail.svg';
 
 export const companies = [
   {
