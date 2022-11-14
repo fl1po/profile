@@ -30,7 +30,7 @@ export const companies = [
       {
         src: Telegram,
         link: 'https://t.me/',
-        name: 'normalnikus',
+        name: 'ebissomnoi',
       },
       {
         src: VK,
