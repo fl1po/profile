@@ -25,7 +25,9 @@ const Company = ({
     <div>@</div>
     {companyName}
     {' '}
+    (
     {description}
+    )
     <SocialList>
       {resources.map(({ src, link, name = '' }) => (
         <div key={link}>
