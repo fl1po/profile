@@ -61,7 +61,7 @@ export const socials = [
   },
   {
     name: 'Mail',
-    link: 'mitryakov@pm.me',
+    link: 'igor@mitryakov.dev',
     src: Protonmail,
   },
 ];
