@@ -1,26 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledCompany = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-`;
-
-const StyledLogo = styled.img`
-  margin: 5px 10px;
-`;
-
-const SocialList = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 
 const Company = ({
   post, companyName, description, resources,
 }) => (
-  <StyledCompany>
+  <div className="flex items-center flex-col m-[10px]">
     {post}
     <div>@</div>
     {companyName}
@@ -28,7 +12,7 @@ const Company = ({
     (
     {description}
     )
-    <SocialList>
+    <div className="flex content-center">
       {resources.map(({ src, link, name = '' }) => (
         <div key={link}>
           <a
@@ -36,12 +20,12 @@ const Company = ({
             target="_blank"
             rel="noreferrer"
           >
-            <StyledLogo src={src} width={20} height={20} />
+            <Image className="my-[5px] mx-[10px]" src={src} width={20} height={20} />
           </a>
         </div>
       ))}
-    </SocialList>
-  </StyledCompany>
+    </div>
+  </div>
 );
 
 export default Company;

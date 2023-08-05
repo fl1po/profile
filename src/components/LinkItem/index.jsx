@@ -1,40 +1,28 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import styled from 'styled-components';
-
-const StyledLinkItem = styled.div`
-  display: flex;
-  align-items: center;
-  margin: 8px;
-`;
-
-const StyledLogo = styled.img`
-  margin-right: 5px;
-`;
-
-const StyledLink = styled.a`
-  color: black;
-  margin-left: 5px;
-`;
 
 const LinkItem = ({
   name, link, userName, src,
 }) => (
-  <StyledLinkItem>
-    <StyledLogo
+  <div className="flex items-center m-2">
+    <Image
+      className="mr-[5px]"
       src={src}
-      alt={`${name } logo`}
+      alt={`${name} logo`}
       width={20}
       height={20}
     />
     {name}
     :
-    <StyledLink
+    <Link
+      className="black ml-[5px] underline"
       href={userName ? link + userName : `mailto:${link}`}
       target="_blank"
     >
       {userName ? `@${userName}` : link}
-    </StyledLink>
-  </StyledLinkItem>
+    </Link>
+  </div>
 );
 
 export default LinkItem;
