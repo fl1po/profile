@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 export const metadata = {
   title: 'Igor Mitryakov',
+  description: 'Web Development',
 };
 
 const RootLayout = ({ children }) => (

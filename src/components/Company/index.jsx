@@ -20,7 +20,7 @@ const Company = ({
             target="_blank"
             rel="noreferrer"
           >
-            <Image className="my-[5px] mx-[10px]" src={src} width={20} height={20} />
+            <Image className="my-[5px] mx-[10px]" alt={name} src={src} width={20} height={20} />
           </a>
         </div>
       ))}
