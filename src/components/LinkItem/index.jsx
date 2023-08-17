@@ -7,11 +7,9 @@ const LinkItem = ({
 }) => (
   <div className="flex items-center m-2">
     <Image
-      className="mr-[5px]"
+      className="mr-[5px] w-5 h-5"
       src={src}
       alt={`${name} logo`}
-      width={20}
-      height={20}
     />
     {name}
     :
