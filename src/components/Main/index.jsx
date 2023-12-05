@@ -6,7 +6,7 @@ import { companies, socials } from './data';
 const Main = () => (
   <div
     className="min-h-[35vh] min-w-[200px] w-full max-w-[300px]
-    bg-[#d8d3ff] flex content-center flex-col rounded-3xl shadow-lg shadow-[#504646] py-0 px-[30px]"
+    bg-[#d8d3ff] flex justify-center content-center flex-col rounded-3xl shadow-lg shadow-[#504646] py-0 px-[30px]"
   >
     <div>
       {companies.map((company) => <Company key={company.companyName} {...company} />)}
