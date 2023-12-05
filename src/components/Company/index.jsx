@@ -4,7 +4,7 @@ import React from 'react';
 const Company = ({
   post, companyName, description, resources,
 }) => (
-  <div className="flex items-center flex-col m-[10px]">
+  <div className="flex items-center flex-col m-[10px] text-center">
     {post}
     <div>@</div>
     {companyName}
