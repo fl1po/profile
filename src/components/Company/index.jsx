@@ -9,9 +9,7 @@ const Company = ({
     <div>@</div>
     {companyName}
     {' '}
-    {description && `(
-    ${description}
-    )`}
+    {description && `(${description})`}
     {!!resources?.length && (
     <div className="flex content-center">
       {resources.map(({ src, link, name = '' }) => (
