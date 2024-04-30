@@ -2,25 +2,12 @@ import Github from '../../../resources/github.png';
 import Telegram from '../../../resources/telegram.svg';
 import VK from '../../../resources/vk.svg';
 import Instagram from '../../../resources/instagram.svg';
-import cyrm from '../../../resources/cyrm.svg';
 import Protonmail from '../../../resources/protonmail.svg';
 
 export const companies = [
   {
     post: 'Frontend Developer',
-    companyName: 'cyber-rom',
-    description: 'Media',
-    resources: [
-      {
-        src: cyrm,
-        link: 'https://cyrm.ru/',
-      },
-      {
-        src: VK,
-        link: 'https://vk.com/',
-        name: 'cyber_rom',
-      },
-    ],
+    companyName: 'Freelance',
   },
   {
     post: 'PR',
