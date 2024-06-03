@@ -9,7 +9,6 @@ export const companies = [
   {
     post: 'Frontend Developer',
     companyName: 'fams.ai',
-    description: 'Media',
     resources: [
       {
         src: Fams,
@@ -20,7 +19,6 @@ export const companies = [
   {
     post: 'PR',
     companyName: 'WARHOL',
-    description: 'Media',
     resources: [
       {
         src: Telegram,
