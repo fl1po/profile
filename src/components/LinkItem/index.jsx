@@ -5,7 +5,7 @@ import React from 'react';
 const LinkItem = ({
   name, link, userName, src,
 }) => (
-  <div className="flex items-center m-2">
+  <div className="flex items-center m-2 text-slate-700">
     <Image
       className="mr-[5px] w-5 h-5"
       src={src}
