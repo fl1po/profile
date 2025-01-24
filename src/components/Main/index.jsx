@@ -6,7 +6,7 @@ import { companies, socials } from './data';
 const Main = () => (
   <div
     className="min-h-[30vh] min-w-[200px] w-full max-w-[300px] gap-4
-    bg-gradient-to-br from-indigo-50 to-violet-50 
+    bg-gradient-to-br from-indigo-50 to-violet-50
     flex justify-around content-center flex-col rounded-3xl shadow-lg shadow-[#504646] py-0 px-[30px]"
   >
     <div>
